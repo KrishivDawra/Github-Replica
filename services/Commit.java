@@ -18,7 +18,7 @@ public class Commit {
         else if(select == 2)
         {
             RepositoryServices repo = new RepositoryServices();
-            repo.editRepo(maps, commitStack);
+            repo.editRepo(folderName, maps, commitStack);
         }
     }
 }

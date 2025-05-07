@@ -70,8 +70,8 @@ public class Authentication {
         return false; // Username not found
     }
 
-    public boolean register(String name ,String email, String username, String password){
-        File file = new File("data/users.txt");
+    public void register(String name ,String email, String username, String password){
+        File file = new File("data/user.txt");
         try {
             // Create FileWriter in append mode to add new controller.data to the file without overwriting
             FileWriter fileWriter = new FileWriter(file, true);  // 'true' appends to the file
@@ -87,11 +87,9 @@ public class Authentication {
             fileWriter.close();
 
             System.out.println("User registered successfully!");
-            return true;
         } catch (IOException e) {
             System.out.println("An error occurred while registering user.");
             e.printStackTrace();
-            return false;
         }
     }
 }

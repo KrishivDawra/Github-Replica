@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+import controller.RegisterInput;
 import modal.User;
 import services.Merge;
 import utils.Authentication;
@@ -23,14 +24,33 @@ public class Index {
 
         System.out.println("Welcome to GitTrack...");
         System.out.println("Enter your choice!");
-        System.out.println("1. Login");
-        System.out.println("2. Sign Up");
+        System.out.println("1. Sign Up");
+        System.out.println("2. Login");
 
         Scanner sc = new Scanner(System.in);
         int first_choice = sc.nextInt();
         sc.nextLine();
-        if (first_choice == 1) {
 
+        if (first_choice == 1) {
+            RegisterInput register = new RegisterInput();
+            register.getInput();
+            Authentication registerUser = new Authentication();
+            String name = register.getName();
+            String email = register.getEmail();
+            String username = register.getUsername();
+            String password = register.getPassword();
+            registerUser.register(name , email, username, password);
+            first_choice = 2;
+//            if(isRegistered)
+//            {
+//                System.out.println("Registered Succesfully!");
+//            }
+//            else {
+//                System.out.println("Registration failed or username already exists.");
+//            }
+        }
+        if (first_choice == 2) {
+            System.out.println("Enter login details!");
             User user = new User();
             user.fetchUserData();
             String folderName = "";
@@ -106,25 +126,6 @@ public class Index {
                 System.out.println("Invalid Username or Password. Please try again.");
             }
         }
-        else if (first_choice == 2) {
-            System.out.print("Enter your Name: ");
-            String name = sc.nextLine();
-            System.out.print("Enter your Email: ");
-            String email = sc.nextLine();
-            System.out.print("Enter your User Name: ");
-            String username = sc.nextLine();
-            System.out.print("Enter your Password: ");
-            String password = sc.nextLine();
-            Authentication registerUser = new Authentication();
-            boolean isRegistered = registerUser.register(name, email, username, password);
-            if(isRegistered)
-            {
-                System.out.println("Registered Succesfully!");
-            }
-            else {
-                System.out.println("Registration failed or username already exists.");
-            }
-        } 
         else {
             System.out.println("Invalid choice. Please restart the program.");
         }

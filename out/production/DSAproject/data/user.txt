@@ -1,10 +1,15 @@
-Name: Krish
-Email: krishiv@
+Name: Krishiv Dawra
+Email: krishivdawra@gmail.com
 Username: admin
 Password: admin
----------------------------------
-Name: hARDIK
-Email: hardi@
-Username: diex
-Password: admin1
----------------------------------
+---------------------------
+Name: Hemant Sardana
+Email: hemant2416@
+Username: hemant2416
+Password: admin
+---------------------------
+Name: hardik
+Email: hardik6301@gmail.com
+Username: hardik6301
+Password: admin
+---------------------------

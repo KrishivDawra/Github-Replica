@@ -8,10 +8,10 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class RepositoryServices {
-    public void editRepo(HashMap<String, String> maps, Stack<String> commitStack) {
+    public void editRepo(String folderName, HashMap<String, String> maps, Stack<String> commitStack) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Repo Name: ");
-        String folderName = sc.nextLine();
+//        System.out.println("Enter Repo Name: ");
+//        String folderName = sc.nextLine();
         File folder = new File("Repositories/" + folderName); // Check for folder inside Repositories
 
         if (folder.exists()) {
