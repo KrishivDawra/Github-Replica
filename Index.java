@@ -89,7 +89,9 @@ public class Index {
                         String folderB = sc.nextLine();
                         System.out.println("enter name of new folder:");
                         String mergename = sc.nextLine();
-                        Merge desti = new Merge(folderA, folderB, mergename);
+                        System.out.println("Enter repo name: ");
+                        String repo = sc.nextLine();
+                        Merge desti = new Merge(user.getStoredUsername(), repo, folderA, folderB, mergename);
 
                     }
                     else if(choice == 3)

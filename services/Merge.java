@@ -4,12 +4,12 @@ import java.io.*;
 import utils.DfsMerge;
 
 public class Merge {
-    public Merge(String FolderA, String FolderB, String mergename) {
+    public Merge(String username, String repo, String FolderA, String FolderB, String mergename) {
         // Your folders
         File folderA = new File(FolderA);
         File folderB = new File(FolderB);
 
-        File mergedFolder = new File(mergename); // Destination
+        File mergedFolder = new File("Repositories/"+ username + "/" + repo + "/" + mergename); // Destination
 
         if (!mergedFolder.exists()) {
             mergedFolder.mkdirs();

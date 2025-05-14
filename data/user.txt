@@ -18,3 +18,8 @@ Email: kk6734401@gmail.com
 Username: kartik01
 Password: admin
 ---------------------------
+Name: sudhanshu
+Email: sudhanshu@gmail.com
+Username: meh-sudhanshu
+Password: test@123
+---------------------------

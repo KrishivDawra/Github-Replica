@@ -14,9 +14,9 @@ public class Project {
         File userFolder = new File(parentDir + "/" + username);
         if (!userFolder.exists()) {
             if (userFolder.mkdir()) {
-                System.out.println("📂 Folder created: " + userFolder.getPath());
+                System.out.println("Folder created: " + userFolder.getPath());
             } else {
-                System.out.println("❌ Failed to create folder!");
+                System.out.println("Failed to create folder!");
             }
         } else {
             System.out.println("⚠️ Folder already exists for user: " + username);

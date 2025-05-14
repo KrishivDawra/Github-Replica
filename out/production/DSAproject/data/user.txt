@@ -13,3 +13,13 @@ Email: hardik6301@gmail.com
 Username: hardik6301
 Password: admin
 ---------------------------
+Name: kartik
+Email: kk6734401@gmail.com
+Username: kartik01
+Password: admin
+---------------------------
+Name: sudhanshu
+Email: sudhanshu@gmail.com
+Username: meh-sudhanshu
+Password: test@123
+---------------------------
